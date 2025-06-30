@@ -1,11 +1,9 @@
-package Controller;
+package org.engripaye.containerizedjavaapp.Controller;
 
-import Model.Todo;
-import Service.todoService;
-import org.springframework.stereotype.Controller;
+import org.engripaye.containerizedjavaapp.Model.Todo;
+import org.engripaye.containerizedjavaapp.Service.todoService;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.plaf.PanelUI;
 import java.util.List;
 
 @RestController
@@ -28,10 +26,14 @@ public class todoController {
         return todoService.add(todo);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
         todoService.delete(id);
     }
 
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }
 
 }

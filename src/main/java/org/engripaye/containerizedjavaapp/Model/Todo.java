@@ -1,4 +1,4 @@
-package Model;
+package org.engripaye.containerizedjavaapp.Model;
 
 public class Todo {
 

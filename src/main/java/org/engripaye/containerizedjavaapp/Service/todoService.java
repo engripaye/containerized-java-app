@@ -1,6 +1,6 @@
-package Service;
+package org.engripaye.containerizedjavaapp.Service;
 
-import Model.Todo;
+import org.engripaye.containerizedjavaapp.Model.Todo;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
